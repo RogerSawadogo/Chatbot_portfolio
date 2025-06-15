@@ -6,7 +6,8 @@ check-api:
 
 deploy:
 	@echo "🚀 Déploiement vers Hugging Face Space..."
-	@huggingface-cli repo clone https://huggingface.co/spaces/Rimro/rogerbot hf_space
+	@rm -rf hf_space
+	@git clone https://huggingface.co/spaces/Rimro/rogerbot hf_space
 	@rsync -av --exclude='.git' ./ hf_space/
 	@cd hf_space && \
 	git config user.name "GitHub Actions" && \
@@ -14,5 +15,6 @@ deploy:
 	git add . && \
 	(git commit -m "Auto-deploy from GitHub Actions" || echo "No changes to commit") && \
 	git push origin main
+
 
 
