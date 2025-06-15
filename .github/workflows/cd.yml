@@ -10,23 +10,27 @@ jobs:
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
-      - name: Setup Python
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Install huggingface_hub and huggingface-cli
-        run: pip install huggingface_hub huggingface-cli
+      - name: 📦 Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install huggingface_hub
 
-      - name: Login to Hugging Face
+      - name: 🔐 Login to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: echo "$HF_TOKEN" | huggingface-cli login --token
 
-      - name: Deploy (via Makefile)
+      - name: 🚀 Deploy to Hugging Face Space via Makefile
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: make deploy
