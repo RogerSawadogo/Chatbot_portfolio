@@ -31,6 +31,17 @@ jobs:
         run: huggingface-cli login --token "$HF_TOKEN"
 
 
+      - name: 🪪 Configure Git for Hugging Face push
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          run: |
+            git config --global credential.helper store
+            git config --global user.email "actions@github.com"
+            git config --global user.name "GitHub Actions"
+            echo "https://huggingface-cli:$HF_TOKEN@huggingface.co" > ~/.git-credentials
+
+
+
       - name: 🚀 Deploy to Hugging Face Space via Makefile
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
