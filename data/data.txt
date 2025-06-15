@@ -1,0 +1,19 @@
+Je m'appelle SAWADOGO Rimsongdo Roger, étudiant en deuxième année au cycle ingénieur à l’Institut National des Postes et Télécommunications (INPT) de Rabat, au Maroc, dans la filière Systèmes Embarqués et Services Numériques. Originaire du Burkina Faso, j’ai obtenu un baccalauréat série scientifique en juillet 2021 à Kaya, avant d’intégrer les classes préparatoires aux grandes écoles au lycée Moulay Idriss à Fès. Mon parcours traduit un engagement constant envers l’excellence académique et technologique, appuyé par ma passion profonde pour l’intelligence artificielle, les systèmes embarqués, l’IoT, et les nouvelles technologies.
+
+Au fil de ma formation, j’ai acquis de solides compétences techniques. Je programme en Python, C, C++, Java et MATLAB. En machine learning, je maîtrise l’apprentissage supervisé et non supervisé, les algorithmes de régression et de classification, ainsi que les architectures deep learning comme les CNN, RNN et les modèles de traitement du langage naturel (NLP). En vision par ordinateur, je manipule des outils avancés tels que YOLO et DeepSort, avec une bonne maîtrise des frameworks Scikit-learn, TensorFlow et Keras.
+
+Lors de mon stage de fin de première année, de juin à août 2024, j’ai participé à un projet d’agriculture intelligente, où j’ai conçu un modèle de machine learning pour l’aide à la décision en matière d’irrigation, développé un modèle deep learning pour la détection de maladies des plantes, et créé une application mobile IoT permettant le monitoring en temps réel des données agricoles.
+
+En parallèle, j’ai mené plusieurs projets académiques avancés. Parmi eux, un système de détection et de reconnaissance de composants électroniques à l’aide de YOLO, incluant le re-entraînement du modèle sur un dataset spécifique et un fine-tuning pour optimiser les performances. Un autre projet portait sur l’optimisation d’un modèle de tracking vidéo pour Raspberry Pi, en utilisant YOLO et DeepSort, avec un travail d’adaptation aux contraintes de ressources limitées, notamment par parallélisation et optimisation du code.
+
+Dans le domaine de l’analyse chimique, j’ai développé un modèle de prédiction de la quantité d’aluminium dans l’acier à partir de spectres, illustrant ma capacité à appliquer le machine learning à des contextes industriels. J’ai aussi eu une première expérience de l’environnement technico-commercial grâce à l’utilisation d’un CRM dans un projet complémentaire.
+
+Mes compétences sont appuyées par plusieurs certifications techniques : Matlab Onramp, Machine Learning with Python, TensorFlow for Deep Learning et Deep Learning Fundamentals. Côté humain, je me distingue par ma capacité d’écoute, mon leadership, mon aisance en communication, et mon aptitude au travail d’équipe. Je parle couramment français et possède un niveau intermédiaire en anglais.
+
+Mon engagement académique a été récompensé par des distinctions nationales, dont le Prix d’Excellence du Président du Faso pour avoir été 3e au niveau national au Baccalauréat 2021, ainsi que le 2e prix aux Olympiades de Mathématiques en 2018.
+
+En dehors du cadre académique, je m’épanouis à travers divers centres d’intérêt. Je suis passionné par la lecture, je pratique le piano et la guitare, et je consacre également du temps au football, au volleyball et au bénévolat, car je crois en l’impact social de l’engagement personnel.
+
+Actuellement basé à Madinat Al Irfane, Rabat (Maroc), je suis joignable au +212 619 933 585, ou par email à rogersawadogo12@gmail.com. Pour en savoir plus sur mon parcours et mes projets, vous pouvez consulter mon profil LinkedIn : https://www.linkedin.com/in/rimsongdo-roger-sawadogo-ab39b4286.
+
+Je suis motivé, curieux, et toujours prêt à relever de nouveaux défis technologiques, tant académiques que professionnels.
