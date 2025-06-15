@@ -9,6 +9,9 @@ from app.generator import generate_response_deepseek
 load_dotenv()
 API_KEY = os.getenv("API_KEY_LLAMA")
 
+print("API KEY:", API_KEY)  # à supprimer après test
+
+
 # Créer l'index si nécessaire
 if not (os.path.exists('index.faiss') and os.path.exists('docs.pkl')):
     create_index('data/data.txt')
