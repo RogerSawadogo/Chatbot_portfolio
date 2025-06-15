@@ -28,6 +28,5 @@ if __name__ == "__main__":
         description="Pose ta question à Roger !",
         theme=gr.themes.Soft(primary_hue="indigo"),
         chatbot=gr.Chatbot(height=500, label="RogerBot", bubble_full_width=False),
-        examples=["Qui est Roger ?", "Quelles sont ses compétences ?"],
-        type="messages"  # This ensures consistent message format
+        examples=["Qui est Roger ?", "Quelles sont ses compétences ?"]
     ).launch()
