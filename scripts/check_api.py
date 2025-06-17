@@ -7,7 +7,7 @@ load_dotenv()
 api_key = os.getenv("API_KEY_LLAMA")
 
 if not api_key:
-    raise ValueError("❌ Clé API_KEY_LLAMA manquante dans .env")
+    raise ValueError("❌ API_KEY_LLAMA missing in .env")
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
