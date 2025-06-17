@@ -16,10 +16,10 @@ if not (os.path.exists('index.faiss') and os.path.exists('docs.pkl')):
 # Charger le modèle d'embedding, l'index et les documents
 embedding_model, index, docs = load_index_and_docs()
 
-# Fonction de chat appelée par Gradio (format tuple attendu)
+# Fonction de chat appelée par Gradio
 def chat_with_roger(message, history):
     answer, _ = generate_response_deepseek(message, embedding_model, index, docs, API_KEY)
-    return message, answer  # format (user message, bot response)
+    return answer  # Return just the answer string
 
 if __name__ == "__main__":
     gr.ChatInterface(
@@ -28,5 +28,6 @@ if __name__ == "__main__":
         description="Pose ta question à Roger !",
         theme=gr.themes.Soft(primary_hue="indigo"),
         chatbot=gr.Chatbot(height=500, label="RogerBot"),
-        examples=["Qui est Roger ?", "Quelles sont ses compétences ?"]
+        examples=["Qui est Roger ?", "Quelles sont ses compétences ?"],
+        cache_examples=False  # Disable example caching to avoid format issues
     ).launch()
