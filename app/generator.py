@@ -19,7 +19,9 @@ def generate_response_deepseek(question, embedding_model, index, docs, api_key, 
             "Content-Type": "application/json"
         },
         json={
-            "model": "meta-llama/llama-3.3-8b-instruct:free",
+
+            #"model": "meta-llama/llama-3.3-8b-instruct:free",
+            "model": "meta-llama/llama-4-maverick-17b-128e-instruct:free",
             "messages": [{"role": "user", "content": prompt}],
             "max_tokens": max_tokens,
             "temperature": 0.7
