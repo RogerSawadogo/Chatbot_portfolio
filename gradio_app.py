@@ -2,7 +2,7 @@ import gradio as gr
 import requests
 
 def chat_with_roger(message, history):
-    response = requests.post("http://localhost:8000/chat", json={"message": message, "history": history})
+    response = requests.post("http://localhost:7860/chat", json={"message": message, "history": history})
     return response.json()["response"]
 
 gr.ChatInterface(
