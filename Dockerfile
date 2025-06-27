@@ -7,7 +7,7 @@ WORKDIR /app
 # Étape 3 : Copier le fichier requirements.txt et installer les dépendances
 COPY requirements.txt .
 
-# Installer les dépendances système nécessaires
+# Installer les dépendances système nécessaires (FAISS ou autres)
 RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
@@ -18,15 +18,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Étape 4 : Copier tout le reste du projet
 COPY . .
 
-
-# Étape 6 : Exposer le port utilisé par Gradio
+# Étape 5 : Exposer le port utilisé par FastAPI (7860 sur Hugging Face)
 EXPOSE 7860
 
-
-ENV GRADIO_SERVER_NAME="0.0.0.0"
-
-
-# Étape 7 : Lancer le script d'entrée
-#CMD ["./entrypoint.sh"]
-CMD ["python", "gradio_app.py"]
-
+# Étape 6 : Lancer le serveur FastAPI avec uvicorn
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
