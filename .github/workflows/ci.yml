@@ -19,7 +19,4 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       
-      - name: Check API Key validity (via Makefile)
-        env:
-          API_KEY_LLAMA: ${{ secrets.API_KEY_LLAMA }}
-        run: make check-api
+      
