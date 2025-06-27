@@ -194,3 +194,4 @@ cython_debug/
 .cursorindexingignore
 
 .env
+gradio_app.py
