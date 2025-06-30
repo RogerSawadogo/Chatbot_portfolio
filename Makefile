@@ -7,7 +7,7 @@ check-api:
 deploy:
 	@echo "🚀 Déploiement vers Hugging Face Space..."
 	@rm -rf hf_space
-	@git clone https://huggingface.co/spaces/Rimro/RogersBot hf_space
+	@git clone https://huggingface.co/spaces/Rimro/Rogers_Bot hf_space
 	@rsync -av --exclude='.git' --exclude='.github' --exclude='tests' ./ hf_space/
 	@cd hf_space && \
 	git config user.name "GitHub Actions" && \
